@@ -15,13 +15,13 @@
           <div class="paper-form-content">
             <fieldset>
               <!--PERSONAL-->
-              <div class="paper-form-content__personal">
-                <label for="name"
-                  >D/Dª
+              <div class="paper-form-content-personal">
+                <div class="paper-form-content-personal__name">
+                  <label for="name">D/Dª</label>
                   <input type="text" id="name" name="name" />
-                </label>
-                <label for="dni"
-                  >DNI
+                </div>
+                <div class="paper-form-content-personal__dni">
+                  <label for="dni">DNI</label>
                   <input
                     type="text"
                     id="dni"
@@ -29,39 +29,41 @@
                     pattern="[0-9]{8}[A-Za-z]{1}"
                     title="Debes introducir 8 números y una letra"
                   />
-                </label>
+                </div>
               </div>
               <!--LOCATE-->
-              <div class="paper-form-content__locate">
-                <label for="street"
-                  >Domicilio
+              <div class="paper-form-content-locate">
+                <div class="paper-form-content-locate__street">
+                  <label for="street">Domicilio</label>
                   <input type="text" id="street" name="street" />
-                </label>
-                <label for="location"
-                  >Localidad
+                </div>
+                <div class="paper-form-content-locate__location">
+                  <label for="location">Localidad</label>
                   <input type="text" id="location" name="location" />
-                </label>
-                <label for="cp"
-                  >C.P.
+                </div>
+                <div class="paper-form-content-locate__cp">
+                  <label for="cp">C.P.</label>
                   <input type="text" id="cp" name="cp" />
-                </label>
+                </div>
               </div>
               <!--DATA-->
-              <div class="paper-form-content__data">
-                <label for="province"
-                  >Provincia
+              <div class="paper-form-content-data">
+                <div class="paper-form-content-data__province">
+                  <label for="province">Provincia</label>
                   <input type="text" id="province" name="province" />
-                </label>
-                <label for="phone"
-                  >Telefono*
+                </div>
+                <div class="paper-form-content-data__phone">
+                  <label for="phone">Telefono</label>
                   <input type="text" id="phone" name="phone" />
-                </label>
-                <label for="email"
-                  >E-mail
+                </div>
+                <div class="paper-form-content-data__email">
+                  <label for="email">E-mail</label>
                   <input type="email" name="email" id="email" />
-                </label>
+                </div>
               </div>
-              <span>*Campo no obligatorio</span>
+              <div class="paper-form-content-personal__warn">
+                *Campo no obligatorio
+              </div>
             </fieldset>
           </div>
           <!--REQUIRED-->
