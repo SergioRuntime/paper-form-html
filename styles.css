@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+div {
+    outline: 1px solid red;
+}
+
+.paper-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.paper-form-content {
+    width: 100%;
+}
+
+fieldset {
+    border: 2px solid #333;
+    padding: 8px 24px 16px 8px;
+}
+
+input {
+    padding: 3px;
+    border-bottom: 1px dotted black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 3px 0;
+}
+
+#acepto,
+.acepto {
+    font-size: 0.8em;
+}
+
+.acepto a {
+    font-size: 1em;
+    color: #2c4cff;
+    text-decoration: none;
+}

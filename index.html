@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <div class="paper-form">
+      <form action="enviado.html" method="post" enctype="multipart/form-data">
+        <div class="paper-form-container">
+          <div class="paper-form-content">
+            <fieldset>
+              <!--PERSONAL-->
+              <div class="paper-form-content__personal">
+                <label for="name">D/Dª</label>
+                <input type="text" id="name" name="name" />
+                <label for="dni">DNI</label>
+                <input
+                  type="text"
+                  id="dnie"
+                  name="dni"
+                  pattern="[0-9]{8}[A-Za-z]{1}"
+                  title="Debes introducir 8 números y una letra"
+                />
+              </div>
+              <!--LOCATE-->
+              <div class="paper-form-content__locate">
+                <label for="street">Domicilio</label>
+                <input type="text" id="street" name="street" />
+                <label for="location">Localidad</label>
+                <input type="text" id="location" name="location" />
+                <label for="cp">C.P.</label>
+                <input type="text" id="cp" name="cp" />
+              </div>
+              <!--DATA-->
+              <div class="paper-form-content__data">
+                <label for="province">Provincia</label>
+                <input type="text" id="province" name="province" />
+                <label for="phone">Telefono*</label>
+                <input type="text" id="phone" name="phone" />
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <span>*Campo no obligatorio</span>
+            </fieldset>
+          </div>
+          <!--REQUIRED-->
+          <div class="paper-form-required">
+            <div class="paper-form-required__title">
+              <h1>SOLICITA</h1>
+              <span>(Marque el derecho que desea ejercitar)</span>
+            </div>
+            <div class="paper-form-required__checks">
+              <input type="checkbox" name="acepto" id="acepto" required />
+              <span class="acepto"
+                >Ejercitar el
+                <a href="#" target="_blank"> derecho de acceso </a>a sus datos
+                de carácter personal</span
+              >
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
