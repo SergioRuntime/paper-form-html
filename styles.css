@@ -22,7 +22,41 @@ div {
 
 fieldset {
     border: 2px solid #333;
-    padding: 8px 24px 16px 8px;
+    padding: 8px 24px 10px 8px;
+}
+
+.paper-form-content-personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper-form-content-locate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper-form-content-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper-form-content-personal__name,
+.paper-form-content-personal__dni,
+.paper-form-content-locate__street,
+.paper-form-content-locate__location,
+.paper-form-content-locate__cp,
+.paper-form-content-data__province,
+.paper-form-content-data__phone,
+.paper-form-content-data__email {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.paper-form-content-personal__warn {
+    margin-top: 16px;
 }
 
 #name {
@@ -42,7 +76,7 @@ fieldset {
 }
 
 #cp {
-    width: 61px;
+    width: 65px;
 }
 
 #province {
@@ -54,10 +88,10 @@ fieldset {
 }
 
 #email {
-    width: 213px;
+    width: 217px;
 }
 
-input {
+.paper-form-content input {
     padding: 3px;
     border-bottom: 1px dotted black;
     border-top: none;
