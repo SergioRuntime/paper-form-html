@@ -25,6 +25,38 @@ fieldset {
     padding: 8px 24px 16px 8px;
 }
 
+#name {
+    width: 506px;
+}
+
+#dni {
+    width: 118px;
+}
+
+#street {
+    width: 328px;
+}
+
+#location {
+    width: 139px;
+}
+
+#cp {
+    width: 61px;
+}
+
+#province {
+    width: 151px;
+}
+
+#phone {
+    width: 150px;
+}
+
+#email {
+    width: 213px;
+}
+
 input {
     padding: 3px;
     border-bottom: 1px dotted black;
