@@ -3,11 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/*
 
 div {
     outline: 1px solid red;
 }
+
+*/
 
 .paper-form {
     display: flex;
@@ -16,31 +21,30 @@ div {
     margin-top: 50px;
 }
 
+.paper-form-container {
+    width: 587px;
+}
+
 .paper-form-content {
     width: 100%;
 }
 
+.paper-form-content label {
+    padding: 0 4px;
+}
+
 fieldset {
     border: 2px solid #333;
-    padding: 8px 24px 10px 8px;
+    padding: 8px 10px 10px 8px;
 }
 
-.paper-form-content-personal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.paper-form-content-locate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+.paper-form-content-personal,
+.paper-form-content-locate,
 .paper-form-content-data {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 553px;
 }
 
 .paper-form-content-personal__name,
@@ -48,27 +52,52 @@ fieldset {
 .paper-form-content-locate__street,
 .paper-form-content-locate__location,
 .paper-form-content-locate__cp,
-.paper-form-content-data__province,
 .paper-form-content-data__phone,
 .paper-form-content-data__email {
     display: inline-flex;
     align-items: flex-end;
 }
 
+.paper-form-content-data__province {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.paper-form-content-data__province select {
+    appearance: none;
+    background-color: transparent;
+    padding-right: 18px;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    border: 1px dotted black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
 .paper-form-content-personal__warn {
     margin-top: 16px;
+    font-style: italic;
+    color: #949494;
+    font-size: 12px;
 }
 
 #name {
-    width: 506px;
+    width: 381px;
 }
 
 #dni {
-    width: 118px;
+    width: 99px;
 }
 
 #street {
-    width: 328px;
+    width: 172px;
 }
 
 #location {
@@ -80,15 +109,15 @@ fieldset {
 }
 
 #province {
-    width: 151px;
+    width: 177px;
 }
 
 #phone {
-    width: 150px;
+    width: 60px;
 }
 
 #email {
-    width: 217px;
+    width: 125px;
 }
 
 .paper-form-content input {
@@ -100,13 +129,57 @@ fieldset {
     margin: 3px 0;
 }
 
-#acepto,
-.acepto {
-    font-size: 0.8em;
+.paper-form-content textarea:focus,
+input:focus {
+    outline: none;
 }
 
-.acepto a {
-    font-size: 1em;
-    color: #2c4cff;
+.paper-form-required__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0px 16px 7px;
+}
+
+.paper-form-required__title h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.paper-form-required__title span {
+    font-style: italic;
+}
+
+.paper-form-required__content {
+    padding-left: 10px;
+}
+
+.paper-form-required__content a {
+    color: #4a66ff;
     text-decoration: none;
+}
+
+.paper-form-required__content input {
+    margin: 8px 0;
+    padding-left: 10px;
+}
+
+.paper-form-required__checks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paper-form-required__first {
+    margin-left: 36px;
+}
+
+.paper-form-required__second {
+    margin-left: 45px;
+}
+
+.paper-form-container hr {
+    margin: 20px 11px 20px 12px;
+    border: 1px dotted black;
 }
